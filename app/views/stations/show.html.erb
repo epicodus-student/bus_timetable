@@ -9,7 +9,12 @@
 </div>
 
 <div class="content">
-  <p>Stuff!</p>
+  <h3>Lines</h3>
+  <ul>
+    <% @station.lines.each do |line| %>
+      <li><%= link_to line.name, line_path(line) %></li>
+    <% end %>
+  </ul>
 </div>
 
 

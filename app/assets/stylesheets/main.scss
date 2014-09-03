@@ -20,9 +20,29 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h3 {
+  font-family: 'Comfortaa', cursive;
+}
+
+h3 {
+  background-color: #7ba7cc;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
 .head {
   display: table;
-  background-color: red;
+  table-layout: fixed;
+  background-color: #4682b4;
   width: 100%;
   min-height: 100px;
 }
@@ -33,26 +53,41 @@ li {
   vertical-align: middle;
 }
 
+.head {
+  h1 {
+    width: 50%;
+  }
+
+  p:first-child {
+    padding-left: 10px;
+  }
+}
+
 .content {
-  margin-top: 20px;
   background-color: lightgray;
   height: 100vh;
+}
+
+.content ul {
+    margin-top: 15px;
+}
+
+.content a {
+  color: #4682b4;
 }
 
 .foot {
     position: fixed;
     bottom: 0;
     width: 1000px;
-    background-color: blue;
+    background-color: #4682b4;
 }
 
 .foot {
   p {
+    padding: 5px;
     display: inline-block;
-  }
-
-  a {
-    color: orange;
+    padding-left: 40px;
   }
 }
 
