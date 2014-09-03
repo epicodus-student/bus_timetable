@@ -1,0 +1,14 @@
+<div class="head">
+  <h1>Lines</h1>
+  <p><%= link_to "New line", new_line_path %></p>
+</div>
+
+<div class="content">
+  <ul>
+    <% @lines.each do |line| %>
+      <li><a href="/lines/<%= line.id %>"><%= Line.find(line).name %></a> </li>
+    <% end %>
+  </ul>
+</div>
+
+
