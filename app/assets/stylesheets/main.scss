@@ -10,7 +10,7 @@ body {
 .main_wrapper {
   height: 100vh;
   background-color: lightgray;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -79,8 +79,9 @@ h1 {
 .foot {
     position: fixed;
     bottom: 0;
-    width: 1000px;
     background-color: #4682b4;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .foot {
