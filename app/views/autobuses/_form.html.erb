@@ -1,0 +1,12 @@
+<%= render("layouts/errors", :object => @autobus) %>
+
+<%= form_for(@autobus) do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :line %>
+    <%= f.collection_select :line_id, Line.all, :id, :name %>
+  </div>
+  <%= f.submit(:class => "btn btn-primary") %>
+<% end %>

@@ -9,12 +9,27 @@
 </div>
 
 <div class="content">
-  <h3>Stations</h3>
-  <ul>
-    <% @line.stations.each do |station| %>
-      <li><%= link_to station.name, station_path(station) %></li>
-    <% end %>
-  </ul>
+  <div class= "colu">
+
+    <div class= "stat">
+      <h3>Stations</h3>
+      <ul>
+        <% @line.stations.each do |station| %>
+          <li><%= link_to station.name, station_path(station) %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class= "bus">
+      <h3>Autobuses</h3>
+      <ul>
+        <% @line.autobuses.each do |autobus| %>
+          <li><%= link_to autobus.name, autobus_path(autobus) %></li>
+        <% end %>
+      </ul>
+    </div>
+
+  </div>
 </div>
 
 

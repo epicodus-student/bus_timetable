@@ -1,0 +1,16 @@
+<div class="head">
+  <h1><%= @autobus.name %></h1>
+  <p><%= link_to "Edit", edit_autobus_path(@autobus), :class => "btn btn-default" %></p>
+  <p><%= link_to "Delete", autobus_path(@autobus),
+                           :data => {:confirm => "You sure?",
+                                     :method => "delete"},
+                           :class => "btn btn-danger" %></p>
+    <p><%= link_to "Go back", autobuses_path %></p>
+</div>
+
+<div class="content">
+  <h3>Line</h3>
+    <%= @autobus.line.name %>
+</div>
+
+
